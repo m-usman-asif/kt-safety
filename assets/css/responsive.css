@@ -1,0 +1,651 @@
+@media only screen and (max-width:1920px) {}
+@media only screen and (max-width:1600px) {}
+@media only screen and (max-width:1440px) {}
+@media only screen and (max-width:1366px) {}
+@media only screen and (max-width:1280px) {}
+@media only screen and (max-width:1200px) {
+    .middleBar .siteLogo img {
+        max-width: 100px;
+    }
+    .middleBar .callDetails span {
+        display: none;
+    }
+    .middleBar .phoneIcon {
+        margin: 0;
+    }
+    .middleBar form select {
+        width: unset;
+    }
+    .indexBannerSec .bannerSlider .item {
+        min-height: 550px;
+    }
+    .indexBannerSec .bannerSlider .bannerContent .lightText {
+        font-size: 45px;
+        line-height: 55px;
+    }
+    .indexBannerSec .bannerSlider .bannerContent .boldTitle {
+        font-size: 55px;
+    }
+    .indexBannerSec .bannerSlider .bannerContent .content {
+        font-size: 20px;
+    }
+    .dealSliderWrapper .subTitle {
+        font-size: 16px;
+    }
+    .iso-nav ul li.active {
+        font-size: 16px;
+    }
+    .indexSectionFour .secTitle {
+        font-size: 30px;
+    }
+    .indexSectionThree .prodCard .prodActions .btnGlobal {
+        padding: 8px;
+        font-size: 12px;
+    }
+
+    /* About Us Page Responsive Css */
+    .innerBannerContent .lightText {
+        font-size: 44px;
+        line-height: 50px;
+    }
+    .innerBannerContent .boldTitle {
+        font-size: 55px;
+        line-height: 60px;
+    }
+    .offerText {
+        font-size: 12px;
+        line-height: 30px;
+    }
+    .teamsWrapper .member .profileWrap {
+        width: 150px;
+        height: 150px;
+    }
+    .aboutSectionThree {
+        padding: 50px 0 25px;
+    }
+
+    /* Store Page Css STarts Here */
+    .productsWrapper .productCarousel .prodCard {
+        max-width: 235px;
+    }
+    /* Checkout SCreen Css */
+
+    .checkoutSingleProduct .singleProdDetails .prodDesc {
+        max-width: 150px;
+    }
+}
+@media only screen and (max-width: 1024px) {
+    .stellarnav.mobile li a {
+        padding: 15px !important;
+    }
+    .stellarnav.mobile .catgBox::before {
+        display: none;
+    }
+    .stellarnav.mobile .has-sub {
+        border: 3px solid #0063d1;
+    }
+    .customerServiceWrap .serviceWRap .serviceIcon i {
+        font-size: 24px;
+    }
+    .customerServiceWrap .serviceWRap .serviceName {
+        font-size: 14px;
+    }
+
+    /* About US Page Css STarts */
+    .offerText {
+        display: none;
+    }
+    .teamsWrapper .member .profileWrap {
+        width: 120px;
+        height: 120px;
+    }
+
+    /* Serving Industries Css Starts */
+    .industriesGrid .contentBox .industryName {
+        font-size: 30px;
+    }
+    .industriesGrid .contentBox .industryDesc {
+        font-size: 16px;
+    }
+    .industriesGrid .industryImgWrap img {
+        min-height: 350px;
+    }
+
+    /* store page css starts here */
+    .productsWrapper .productCarousel .prodCard {
+        max-width: 325px;
+    }
+    .storeSectionTwo .storeWrapper ul.nav {
+        padding: 20px 5px;
+    }
+    .storeSectionTwo .storeWrapper ul.nav .nav-link.active, 
+    .storeSectionTwo .storeWrapper ul.nav .show>.nav-link, 
+    .storeSectionTwo .storeWrapper ul.nav .nav-link {
+        font-family: "RubikBold";
+        font-size: 13px;
+    }
+    /* Checkout Css */
+    .checkOutItemsWrapper .checkoutAllProds .checkoutSingleProduct {
+        padding: 10px;
+    }
+    .checkoutSingleProduct .singleProdDetails .productImg {
+        max-width: 100px;
+    }
+}
+@media only screen and (max-width:991px) {
+    .topBar .topBarContentWrap {
+        font-size: 12px;
+    }
+    .middleBar .searchBar {
+        max-width: 500px;
+    }
+    .middleBar form input {
+        max-width: 300px;
+    }
+    .midBannerWrapper h3 {
+        font-size: 20px;
+    }
+    .bannerContent {
+        text-align: center;
+    }
+    .indexBannerSec .bannerSlider .bannerContent .content {
+        margin: 0 auto
+    }
+    .viewProd {
+        font-size: 14px;
+        line-height: 24px;
+    }
+    .indexSectionFour {
+        text-align: center;
+    }
+    .indexSectionFour .midLogoBanner {
+        padding: 20px 0;
+    }
+    .indexSectionFour .midLogoBanner img {
+        max-width: 100px;
+        width: 100%;
+    }
+    .indexSectionFour .secSubTitle {
+       margin-top: 20px;
+    }
+    .indexSectionFour .secTitle {
+        font-size: 24px;
+        text-align: center;
+    }
+    .indexSectionFour .content {
+        font-size: 16px;
+    }
+    .specificationTabs .nav {
+        justify-content: center;
+        margin: 30px 0;
+    }
+    .indexSectionSix .secTitle {
+        font-size: 24px;
+        line-height: 35px;
+        text-align: center;
+    }
+    .clientLogoWrap img {
+        max-width: 90px;
+    }
+    .footerLogo img {
+        max-width: 100px;
+    }
+
+    /* About Page Css Starts */
+    .innerBannerContent {
+        text-align: center;
+    }
+    .innerBannerContent .lightText {
+        font-size: 36px;
+    }
+    .innerBannerContent .boldTitle {
+        font-size: 45px;
+    }
+    .aboutSectionTwo .flexGrid {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .aboutSectionTwo .flexGrid .column {
+        width: 48%;
+        margin-bottom: 20px;
+    }
+    .aboutSectionTwo .flexGrid .column.active {
+        order: 1;
+    }
+
+    /* Serving INdustries Css Starts */
+    .industriesSectionThree .flexGrid {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    } 
+    .industriesSectionThree .prodCard {
+        max-width: 45%;
+        margin-bottom: 35px;
+    }
+
+    /* Articles Page Css */
+    .articleSectionTwo .articlesWrapper .flexGrid {
+        flex-wrap: wrap;
+    }
+    .singleArticle {
+        max-width: 350px;
+        margin-bottom: 20px;
+    }
+
+    /* Contact US Page Css */
+    .contactDetails .contactBox {
+        width: 33%;
+    }
+    .contacSecThree .mapBox {
+        margin-bottom: 30px;
+    }
+
+    /* Terms & Condition */
+    .termsSectionTwo .termsConditionContentWrap .clause {
+        font-size: 30px;
+    }
+
+    /* store page css starts here */
+    .storeSecBanner {
+        background-position: right;
+    }
+    .productsWrapper .productCarousel .prodCard {
+        max-width: 325px;
+        margin: 0 auto 20px;
+    }
+    /* Product Detail */
+    #productDetailWrapper .prodDescWrap {
+        margin-top: 30px;
+    }
+
+    /* Checkout Css */
+    .billingFormWrap {
+        max-width: 100%;
+    }
+    .checkOutItemsWrapper .checkoutAllProds {
+        height: 335px;
+    }
+    .checkOutItemsWrapper .checkoutAllProds .checkoutSingleProduct {
+        flex-direction: column;
+        border-bottom: 1px solid #0056b6;
+        margin-bottom: 10px;
+    }
+    .checkoutSingleProduct .productPrice {
+        text-align: right;
+    }
+
+}
+@media only screen and (max-width:767px) {
+    .aos-animate {
+        transition-property: none !important;
+        transform: none !important;
+        animation: none !important;
+    }
+    header .bottomBar {
+        padding: 0;
+    }
+    .cartIcon {
+        position: absolute;
+        right: 70px;
+    }
+    .menu-toggle {
+        position: absolute;
+        right: 2%;
+        top: 55%;
+        padding: 0 !important;
+    }
+    .stellarnav .menu-toggle span.bars span {
+        width: 25px;
+        height: 4px;
+        margin: 0 0 5px;
+        background: #000 !important;
+    }
+    .topBarContentWrap .topBarRight {
+        display: none !important;
+    }
+    .callDetails {
+        position: absolute;
+        right: 15px;
+        top: 6%;
+        max-width: 18px;
+        filter: invert(1);
+    }
+    .middleBar {
+        padding: 15px 0;
+    }
+    header .middleBar .middleBarContentWrap .searchBar{
+        display: none;
+    }
+    .indexBannerSec .bannerSlider .item {
+        min-height: 450px;
+    }
+    .indexBannerSec .bannerSlider .bannerContent .lightText {
+        font-size: 36px;
+        line-height: 45px;
+    }
+    .indexBannerSec .bannerSlider .bannerContent .boldTitle {
+        font-size: 48px;
+        line-height: 60px;
+    }
+    .indexSectionTwo .catgegoriesBox {
+        margin: 0 auto;
+        max-width: unset;
+    }
+    .customerServiceWrap {
+        display: flex;
+        padding: 20px;
+        width: 100%;
+        overflow-x: auto;
+        margin-bottom: 30px;
+        -ms-overflow-style: none;  /* Internet Explorer 10+ */
+        scrollbar-width: none;  /* Firefox */
+    }
+    .customerServiceWrap::-webkit-scrollbar { 
+        display: none;  /* Safari and Chrome */
+    }
+    .customerServiceWrap .serviceWRap {
+        max-width: 250px;
+        width: 100%;
+        flex-shrink: 0;
+        margin-right: 10px;
+        border-right: 1px solid #ccc;
+    }
+    .footerContentWrap .column {
+        margin-bottom: 30px;
+    }
+    .colTitle {
+        font-size: 18px;
+    }
+
+    /* About Page Css Starts Here */
+    .innerSecTitle {
+        font-size: 24px;
+        line-height: 30px;
+        margin-bottom: 15px;
+    }
+    .aboutSectionTwo .innerSecDesc {
+        font-size: 16px;
+    }
+    .aboutSectionTwo .flexGrid .column {
+        width: 60%;
+    }
+    .flexGrid .title {
+        font-size: 20px;
+        line-height: 30px;
+        text-align: center;
+    }
+    .flexGrid .content {
+        font-size: 16px;
+        text-align: center;
+    }
+    .teamsWrapper {
+        flex-wrap: wrap;
+    }
+    .teamsWrapper .member {
+        text-align: center;
+        width: 32%;
+        margin-bottom: 20px;
+    }
+    .teamsWrapper .member .profileWrap {
+        margin: 0 auto 20px
+    }
+
+    /* Serving Industries Css Starts */
+    .industriesSectionTwo .industriesGrid .reverse {
+        flex-direction: column-reverse;
+    }
+    .industriesGrid .industryImgWrap img {
+        max-height: 300px;
+        min-height: unset;
+        margin-bottom: 20px;
+    }
+
+    /* Article Page Css */
+    .singleArticle .articleDetail .title {
+        font-size: 18px;
+        margin: 20px 0;
+    }
+
+    /* store page css starts here */
+    .storeSectionTwo .storeWrapper ul.nav {
+        flex-direction: row;
+    }
+    .storeSectionTwo .storeWrapper ul.nav .nav-link.active, 
+    .storeSectionTwo .storeWrapper ul.nav .show>.nav-link, 
+    .storeSectionTwo .storeWrapper ul.nav .nav-link {
+        padding: 0 10px;
+    }
+    .productsWrapper .productCarousel .prodCard {
+        max-width: 250px;
+    }
+
+    /* Product Detail */
+    .productDetailTopSec .prodName {
+        font-size: 24px;
+        line-height: 35px;
+    }
+    .prodDescWrap .pricing {
+        font-size: 28px;
+    }
+
+    /* Checkout Css */
+    .checkOutItemsWrapper {
+        margin-top: 30px;
+    }
+    .checkoutSingleProduct .singleProdDetails {
+        justify-content: flex-start;
+    }
+    .checkoutSingleProduct .singleProdDetails .prodDesc {
+        max-width: 200px;
+    }
+}
+@media only screen and (max-width:575px) {
+    .indexBannerSec .bannerSlider .bannerContent .lightText {
+        font-size: 24px;
+        line-height: 35px;
+    }
+    .indexBannerSec .bannerSlider .bannerContent .boldTitle {
+        font-size: 36px;
+        line-height: 45px;
+    }
+    .indexBannerSec .bannerSlider .bannerContent .content {
+        font-size: 16px;
+    }
+    .indexSectionTwo .secTitle {
+        font-size: 24px;
+    }
+    .indexSectionSix .secTitle {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .clientLogoWrap img {
+        max-width: 70px;
+    }
+    .iso-nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .iso-nav ul li {
+        margin: 0 20px 20px 0;
+    }
+    .footerContentWrap .rightColsWrap {
+        flex-wrap: wrap;
+    }
+    .footerContentWrap .rightColsWrap .column {
+        width: 45%;
+    }
+
+    /* About US Page Css Starts */
+    .aboutSectionTwo .flexGrid .column:hover .details, 
+    .aboutSectionTwo .flexGrid .column.active .details {
+        max-height: 240px;
+    }
+    .aboutSectionTwo .flexGrid .column {
+        width: 75%;
+    }
+
+    /* Contact Us Page */
+    .contactDetails .flexGrid {
+        flex-wrap: wrap;
+    }
+    .contactDetails .contactBox {
+        width: 48%;
+        margin-bottom: 20px;
+    }
+
+    /* Terms & Condition Css Starts */
+    .termsSectionTwo .termsConditionContentWrap .clause {
+        font-size: 24px;
+    }
+    .termsSectionTwo .termsConditionContentWrap .subDesc {
+        font-size: 15px;
+    }
+
+    /* Product Detail */
+    .prodSliderWrap .productMainImg {
+        min-height: 300px;
+    }
+    .prodSliderWrap .productMainImg img {
+        max-width: 250px;
+    }
+    .prodSliderWrap .prodThumbImg {
+        max-width: 140px;
+    }
+    .prodSliderWrap .prodThumbImg img {
+        max-width: 80px;
+        max-height: 75px;
+        min-height: 75px;
+    }
+    
+}
+@media only screen and (max-width:480px) {
+    #cart-sidebar {
+        width: 320px;
+        box-shadow: none;
+    }
+    .iso-nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .footerContentWrap .rightColsWrap .column {
+        width: 100%;
+    }
+
+    /* About Us Page Css Starts */
+
+    .innerBannerContent .lightText {
+        font-size: 30px;
+    }
+    .innerBannerContent .boldTitle {
+        font-size: 36px;
+    }
+    .aboutSectionTwo .flexGrid .column {
+        width: 100%;
+    }
+    .teamsWrapper .member {
+        width: 48%;
+    }
+    .industriesGrid .industryImgWrap img {
+        max-height: 200px;
+    }
+    .industriesGrid .contentBox .industryName {
+        font-size: 24px;
+    }
+    .industriesGrid .contentBox .industryDesc {
+        font-size: 14px;
+    }
+    .industriesSectionThree .prodCard {
+        max-width: 75%;
+    }
+
+    /* Article Page Css */
+    .singleArticle img {
+        min-height: 300px;
+        max-height: 300px;
+    }
+
+    /* COntact Us Page */
+    .bar {
+        margin: 50px 0;
+    }
+    .contactDetails .contactBox {
+        width: 69%;
+        margin-bottom: 25px;
+    }
+
+    /* store page css starts here */ 
+    .productsWrapper .productHead .label {
+        font-size: 16px;
+    }
+    .productsWrapper .productCarousel .prodCard {
+        max-width: 320px;
+    }
+    /* Product Detail */
+    .prodDescWrap .prodActions .btnGlobal {
+        padding: 7px 20px;
+        margin-right: 10px;
+        font-size: 14px;
+    }
+    .prodDescWrap .detailDesc {
+        font-size: 15px;
+    }
+    .productDetailReviews .detailDesc {
+        font-size: 15px;
+    }
+
+    /* Checkout Css */
+    .billingFormWrap .sideBySide {
+        flex-direction: column;
+    }
+    .billingFormWrap .sideBySide .inputLabelWrapper {
+        width: 100%;
+    }
+    .checkoutSingleProduct .singleProdDetails .prodDesc {
+        max-width: 150px;
+    }
+}
+@media only screen and (max-width:385px) {
+    /* Serving Industries Css */
+    #servingIndustriesPageWrapper .innerBannerContent .lightText {
+        font-size: 24px;
+    }
+    .industriesSectionThree .prodCard {
+        max-width: 90%;
+    }
+    /* product detail */
+    .prodDescWrap .prodActions .prodQty {
+        margin-right: 10px;
+    }
+    .prodDescWrap .prodActions .wishListIcons {
+        margin-right: 10px;
+    }
+    .prodDescWrap .prodActions .compareIcon {
+        margin-right: 10px;
+    }
+
+    /* checkout Css */
+    .checkOutItemsWrapper {
+        padding: 30px 10px;
+    }
+    .checkoutSingleProduct .singleProdDetails {
+        flex-direction: column;
+    }
+    .checkoutSingleProduct .singleProdDetails .productImg {
+        max-width: 100px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .checkoutSingleProduct .singleProdDetails .prodDesc {
+        max-width: 200px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .checkoutSingleProduct .productPrice {
+        text-align: center;
+        border: 2px solid #000;
+        width: fit-content;
+        margin: 10px auto;
+        padding: 2px 12px;
+        border-radius: 10px;
+    }
+}

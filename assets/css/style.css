@@ -1,0 +1,2096 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap'); */
+
+@font-face {
+  font-family: "RubikBlack";
+  src: url("../fonts/Rubik-Black.ttf") format("truetype");
+  font-weight: bolder;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "RubikBold";
+  src: url("../fonts/Rubik-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "RubikMedium";
+  src: url("../fonts/Rubik-Medium.ttf") format("truetype");
+  font-weight: medium;
+  font-style: normal;
+}
+@font-face {
+  font-family: "RubikLight";
+  src: url("../fonts/Rubik-Light.ttf") format("truetype");
+  font-weight: light;
+  font-style: normal;
+}
+@font-face {
+  font-family: "RubikRegular";
+  src: url("../fonts/Rubik-Regular.ttf") format("truetype");
+  font-weight: lighter;
+  font-style: normal;
+}
+
+
+html {
+  box-sizing: border-box;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+h1, h2, h3, h4, h5, h6, p, span, ul, li, a, .btn-default, textarea {
+  margin: 0;
+  padding: 0;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a, 
+a:hover, 
+a:focus {
+  text-decoration: none;
+  color: inherit;
+}
+button {
+  outline: none;
+  border: none;
+}
+input,
+input:focus {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+li {
+  list-style-type: none;
+}
+body {
+  overflow-x: hidden;
+  font-family: "RubikRegular";
+  position: relative;
+  scroll-behavior: smooth;
+  transform: none !important;
+  transition: none !important;
+}
+.container {
+    max-width: 1170px;
+}
+.gradientBg {
+  background: linear-gradient(0deg, rgba(0,0,0,1) 1%, rgba(73,73,73,1) 100%);
+}
+.btnGlobal {
+  font-size: 18px;
+  font-weight: 400;
+  color: #fff;
+  background: #0063d1;
+  padding: 10px 25px;
+  display: inline-block;
+}
+.row {
+  margin: 0 !important;
+}
+
+/* Header Css STarts Here */
+header {
+  position: relative;
+}
+.topBar {
+  padding: 12px 0;
+}
+.topBar .topBarContentWrap {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  font-size: 15px;
+}
+.topBar .topBarContentWrap div {
+  display: flex;
+  min-width: 250px;
+}
+.topBar .topBarContentWrap img {
+  max-width: 15px;
+  height: 100%;
+  width: 100%;
+  margin-right: 5px;
+  object-fit: contain;
+  object-position: center;
+}
+.middleBar {
+  padding: 25px 0;
+}
+.middleBar .siteLogo img{
+  filter: invert(1);
+  max-width: 130px;
+}
+.middleBar .middleBarContentWrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.middleBar .searchBar {
+  max-width: 630px;
+  width: 100%;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  padding: 0 5px 0 0;
+}
+.middleBar .searchBar form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.middleBar form select {
+  background: #0063d1;
+  color: #fff;
+  font-size: 15px;
+  width: 200px;
+  border-radius: 20px;
+  padding: 10px;
+  border: none;
+  outline: none;
+}
+.middleBar form input {
+  max-width: 350px;
+  width: 100%;
+  border: none;
+}
+.middleBar form button {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.middleBar form button img {
+  max-width: 30px;
+  width: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+.middleBar .phoneIcon {
+  max-width: 40px;
+  width: 100%;
+  object-fit: contain;
+  object-position: center;
+  margin-right: 20px;
+}
+.middleBar .callDetails {
+  font-family: 'RubikBlack';
+  font-size: 20px;
+}
+.cartIcon {
+  font-size: 25px;
+  position: relative;
+  cursor: pointer;
+}
+.cartIcon .counter {
+  position: absolute;
+  top: -17px;
+  right: -6px;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #c72e2e;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+}
+
+.bottomBar {
+  padding: 5px 0;
+}
+.bottomBar .catgBox {
+  position: relative;
+  z-index: 1;
+}
+.bottomBar .catgBox::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -5px;
+  width: 100%;
+  height: 121%;
+  background: #0063d1;
+  z-index: -1;
+}
+.stellarnav.dark, .stellarnav.dark ul ul {
+  background: none;
+}
+.navigationBar .stellarnav>ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navigationBar .stellarnav>ul>li>a {
+  padding: 10px 15px;
+  text-transform: uppercase;
+}
+.navigationBar li.has-sub ul {
+  background: linear-gradient(0deg, rgba(0,0,0,1) 1%, rgba(73,73,73,1) 100%);
+}
+.navigationBar li.has-sub ul li a {
+  padding: 10px;
+}
+.stellarnav.mobile.left>ul {
+  left: 0;
+  z-index: 9999;
+}
+
+/************** Cart Sidebar **************/
+
+#cart-sidebar {
+  position: fixed;
+  right: -100%;
+  top: 0;
+  height: 100%;
+  width: 400px;
+  background: #000;
+  box-shadow: -6px 0px 10px 0px rgb(0 0 0 / 62%);
+  transition: all 0.5s linear;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#cart-sidebar.active {
+  right: 0%;
+}
+.cartHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border-bottom: 1px solid #fff;
+  color: #fff;
+}
+.cartHeader p {
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+.cartHeader span {
+  font-size: 14px;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.cartBody {
+  height: 650px;
+  overflow-y: scroll;
+  width: 100%;
+}
+.cartBody::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #0063d1;
+}
+.cartBody::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: #0063d1;
+}
+.cartBody::-webkit-scrollbar-thumb
+{
+	background-color: #ffffff;
+	border: 2px solid #555555;
+}
+.cartBody .prodCard {
+  max-width: 280px;
+  margin: 0 auto 20px;
+}
+.prodActions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.prodActions .prodQty {
+  display: flex;
+  align-items: center;
+  max-width: 90px;
+}
+.prodActions .prodQty .refresh_cart {
+  font-size: 12px;
+  height: 20px;
+  background: #0063d1;
+  color: #fff;
+  font-weight: 800;
+  border: none;
+}
+.prodActions .prodQty input {
+  max-width: 35px;
+  margin: 0 10px;
+  text-align: center;
+  border: 2px solid #000;
+  height: 30px;
+  border-radius: 5px;
+  padding: 0 5px;
+  font-size: 14px;
+  font-weight: 700;
+}
+.prodActions .prodQty input::-webkit-outer-spin-button,
+.prodActions .prodQty input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Firefox */
+.cartBody .prodCard .prodActions .prodQty input[type=number] {
+  -moz-appearance: textfield;
+}
+.cartBody .prodCard .prodActions .qtyLabel {
+  font-size: 18px;
+  font-weight: 700;
+}
+.cartFooter {
+  padding: 15px;
+  border-top: 1px solid #fff;
+}
+.cartFooter button {
+  display: block;
+  width: 100%;
+}
+
+
+
+/************** Cart Sidebar **************/
+
+/* Home Page Css Starts Here */
+.indexBannerSec {
+  position: relative;
+}
+.indexBannerSec .bannerSlider {
+  position: relative;
+}
+.indexBannerSec .bannerSlider .item {
+  min-height: 650px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.indexBannerSec .bannerSlider .bannerContent .lightText {
+  font-family: "RubikRegular";
+  font-size: 55px;
+  line-height: 80px;
+  color: #fff;
+  text-transform: uppercase;
+}
+.indexBannerSec .bannerSlider .bannerContent .boldTitle {
+  font-family: "RubikBlack";
+  font-size: 70px;
+  line-height: 80px;
+  color: #fff;
+}
+.indexBannerSec .bannerSlider .bannerContent .content {
+  font-family: "RubikLight";
+  font-size: 24px;
+  line-height: 30px;
+  color: #fff;
+  max-width: 500px;
+}
+.indexBannerSec .bannerSlider .bannerContent .btnGlobal {
+  border-radius: 20px;
+  margin-top: 20px;
+  transition: all 0.5s ease-in-out
+}
+.indexBannerSec .bannerSlider .bannerContent .btnGlobal:hover {
+  color: #000;
+}
+.indexBannerSec .bannerSlider .owl-dots{
+  position: absolute;
+  bottom: 3%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+.indexBannerSec .bannerSlider .owl-dots .owl-dot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.indexBannerSec .bannerSlider .owl-dots .owl-dot span {
+  background: #000;
+  border: 2px solid #fff;
+}
+.indexBannerSec .bannerSlider .owl-dots .owl-dot.active {
+  background: #fff;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+}
+.indexBannerSec .bannerSlider .owl-dots .owl-dot.active span {
+  background: #0063d1;
+  height: 15px;
+  width: 15px;
+  display: inline-block;
+  padding: 5px;
+}
+.indexSectionTwo {
+  padding: 50px 0;
+}
+.secTitle {
+  font-family: "RubikMedium";
+  font-size: 29px;
+  line-height: 45px;
+  color: #000;
+  margin-bottom: 40px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.catgegoriesBox {
+  position: relative;
+  z-index: 1;
+  padding: 50px 30px;
+  background: #f2f4f5;
+  max-width: 380px;
+  min-height: 250px;
+  width: 100%;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  color: #000;
+  transition: all 0.5s ease-in-out;
+}
+.catgSlider .owl-item.center .catgegoriesBox {
+  background: #0063d1d6;
+  color: #fff;
+}
+.catgSlider .owl-item.center .catgegoriesBox .amount {
+  color: #fff
+}
+.catgSlider .owl-item.center .catgegoriesBox .catgImg {
+  opacity: 1;
+}
+.catgSlider .owl-item.center .catgegoriesBox .catgDetails a {
+  border: 2px solid #fff;
+}
+.catgegoriesBox:hover {
+  background: #0063d1d6;
+  color: #fff;
+}
+.catgegoriesBox:hover .catgDetails a  {
+  border: 2px solid #fff;
+}
+.catgegoriesBox:hover .catgDetails .price .amount {
+  color: #fff;
+}
+.catgegoriesBox .catgDetails .price {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 25px;
+  /* color: #000; */
+}
+.catgegoriesBox .catgDetails .price .amount {
+  color: #0063d1;
+}
+.catgegoriesBox .catgDetails .prodTitle {
+  font-family: "RubikBold";
+  font-size: 18px;
+  line-height: 25px;
+  min-height: 50px;
+  max-height: 50px;
+  height: 100%;
+  /* color: #000; */
+}
+.catgegoriesBox .catgDetails .catgSlug {
+  font-family: "RubikMedium";
+  font-size: 15px;
+  line-height: 30px;
+  /* color: #000; */
+  display: block;
+}
+.catgegoriesBox .catgDetails a {
+  font-family: "RubikMedium";
+  font-size: 14px;
+  padding: 10px 30px;
+  border-radius: 20px;
+  margin-top: 25px;
+  display: inline-block;
+  border: 2px solid #0063d1;
+  transition: all 0.3s ease-in-out;
+}
+.catgegoriesBox .catgDetails a:hover {
+  background: #0063d1;
+  color: #fff;
+}
+.catgegoriesBox .catgImg {
+  position: absolute;
+  right: 5%;
+  top: 10%;
+  max-width: 150px;
+  width: 100%;
+  max-height: 150px;
+  height: 100%;
+  object-fit: contain;
+  object-position: center; 
+  z-index: -1;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+.catgegoriesBox:hover .catgImg {
+  opacity: 1;
+}
+
+
+/*Index Section Three*/
+.indexSectionThree {
+  background: #f2f4f5;
+  padding: 25px 0 60px;
+}
+
+.dealSliderWrapper .subTitle {
+  font-family: "RubikMedium";
+  font-size: 20px;
+  line-height: 25px;
+  color: #000;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+}
+.dealSlider {
+  padding: 10px;
+  background: #ffffff;
+  border: 1px solid #ececec;
+  box-shadow: 0 0 35px 1px #cccccc55;
+  border-radius: 2px;
+  margin-top: 30px;
+  position: relative;
+}
+.dealSlider .prodCard {
+  padding: 0;
+}
+.prodCard {
+  background: #fff;
+  padding: 10px;
+}
+.prodCard .prodDetailHead {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.prodCard .prodDetailHead .prodName {
+  font-family: "RubikMedium";
+  font-size: 12px;
+  line-height: 25px;
+  color: #acacac;
+  text-transform: uppercase;
+  width: 175px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.prodCard .prodDetailHead .offPercent {
+  font-family: "RubikRegular";
+  font-size: 12px;
+  line-height: 25px;
+  color: #fff;
+  background-color: #ffb136;
+  padding: 0 10px;
+}
+.prodCard .prodDetailHead .offPercent.new {
+  background-color: #0063d1;
+}
+.prodCard .prodImgWrap {
+  width: 100%;
+  height: 150px;
+  margin-bottom: 40px;
+  text-align: center;
+  position: relative;
+}
+.prodCard .prodImgWrap img {
+  max-width: 160px;
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  object-position: center;
+  margin: 0 auto;
+  display: block;
+}
+.prodCard .prodImgWrap .hoverView {
+  position: absolute;
+  top: 45%;
+  left: 0;
+  right: 0;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 10px 30px;
+  color: #fff;
+  font-size: 15px;
+  background: #000000b3;
+  border-radius: 5px;
+  transform: scale(0);
+  transition: all 0.3s ease-in-out;
+}
+.prodCard:hover .hoverView {
+  transform: scale(1);
+}
+.prodCard .prodDesc {
+  font-family: "RubikMedium";
+  font-size: 15px;
+  line-height: 24px;
+  color: #000;
+  text-align: center;
+  max-height: 48px;
+  min-height: 48px;
+  height: 100%;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.prodCard .prodPricing {
+  margin: 10px 0;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.prodCard .salePrice {
+  font-family: "RubikBold";
+  font-size: 14px;
+  line-height: 24px;
+  color: #0063d1;
+  margin-right: 5px;
+}
+.prodCard .originalPrice {
+  font-family: "RubikBold";
+  font-size: 12px;
+  line-height: 20px;
+  color: #0063d1;
+  text-decoration: line-through;
+}
+.prodCard .rating i{
+  font-size: 12px;
+  color: #ffb136;
+}
+.prodCard .prodActions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+.prodCard .prodActions span {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+.prodCard .prodActions span:hover {
+  background: #0063d1;
+}
+.prodCard .prodActions span:hover i {
+  color: #fff;
+}
+.prodCard .prodActions span i {
+  font-size: 14px;
+  color: #0063d1;
+}
+.prodCard .prodActions .btnGlobal {
+  padding: 8px 15px;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.prodCard .prodActions .btnGlobal i {
+  font-size: 14px;
+  margin-right: 5px;
+}
+
+.prodCard .timerWrap {
+  display: flex;
+  justify-content: space-around;
+}
+.prodCard .timerWrap .count_down {
+  font-family: "RubikMedium";
+  font-size: 18px;
+  width: 41px;
+  height: 40px;
+  border-radius: 50%;
+  background: #f2f4f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.prodCard .timerWrap .item {
+  text-align: center;
+}
+.prodCard .timerWrap .item span {
+  font-family: "RubikRegular";
+  font-size: 14px;
+}
+.dealSlider .inventoryDetails .prodInventory{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.dealSlider .inventoryDetails {
+  margin: 30px 0;
+}
+.dealSlider .inventoryDetails .prodInventory {
+  margin-bottom: 10px;
+}
+.dealSlider .inventoryDetails .prodInventory p {
+  font-family: "RubikMedium";
+  font-size: 12px;
+  color: #a1a1a1;
+}
+.dealSlider .inventoryDetails .prodInventory p span {
+  font-family: "RubikBold";
+  font-size: 12px;
+  color: #000;
+  margin-left: 5px;
+}
+.dealSlider .inventoryDetails .progress {
+  height: 10px;
+}
+.dealSlider .inventoryDetails .progress-bar {
+  border-radius: 20px;
+
+}
+.dealSliderWrapper .dealSlider .owl-nav{
+  position: absolute;
+  top: -80px;
+  right: 0px;
+  margin: 0;
+  display: flex;
+}
+.dealSliderWrapper .dealSlider .owl-nav button {
+  width: 25px;
+  height: 25px;
+  background: #fff;
+  border-radius: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  color: #000;
+}
+.dealSliderWrapper .dealSlider .owl-nav button:hover {
+  background: #0063d1;
+  color: #fff;
+}
+.customerServiceWrap {
+  background: #fff;
+  padding: 40px 20px;
+  margin-top: 30px;
+  border: 1px solid #ececec;
+  box-shadow: 0 0 35px 1px #cccccc55;
+}
+.customerServiceWrap .serviceWRap{
+  display: flex;
+  align-items: center;
+}
+.customerServiceWrap .serviceWRap .serviceIcon {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+.customerServiceWrap .serviceWRap .serviceIcon i {
+  font-size: 30px;
+  color: #0063d1;
+}
+.customerServiceWrap .serviceWRap .serviceName{
+  font-size: 18px;
+  font-family: 'RubikBold';
+}
+.customerServiceWrap .serviceWRap .serviceTag {
+  font-size: 16px;
+  font-family: "RubikRegular";
+  color: #acacac;
+}
+.customerServiceWrap hr {
+  border: 1px solid #ccc;
+  margin: 30px 0;
+  width: 100%;
+}
+.iso-nav {
+  position: relative;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.iso-nav ul {
+  display: flex;
+} 
+.iso-nav ul li {
+  font-family: "RubikRegular";
+  margin-right: 10px;
+  font-size: 15px;
+  line-height: 25px;
+  color: #a6a6a6;
+  cursor: pointer;
+}
+.iso-nav ul li.active {
+  font-family: "RubikBold";
+  font-size: 20px;
+  color: #000;
+}
+.main-iso {
+  margin: 30px 0 0 0 !important;
+}
+.main-iso .item {
+  margin-bottom: 20px !important;
+}
+.main-iso .prodCard {
+  box-shadow: 0 0 35px 1px #cccccc55;
+}
+.viewProd {
+  font-size: 15px;
+  text-decoration: underline;
+  color: #a6a6a6;
+}
+/* Mid Banner */
+.midBannerWrapper {
+  min-height: 235px;
+  width: 97%;
+  background: url(../images/mid-banner.png) no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 30px auto 0;
+}
+.midBannerWrapper h3 {
+  font-family: "RubikMedium";
+  font-size: 28px;
+  line-height: 30px;
+  color: #fff;
+  text-align: center;
+  max-width: 500px;
+  margin-bottom: 20px;
+}
+.midBannerWrapper .cta {
+  font: 18px;
+  color: #fff;
+  position: relative;
+  padding: 0 0 10px 0;
+  transition: transform .5s ease;
+  
+}
+.midBannerWrapper .cta::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  transition: all 0.25s;
+  background: #fff;
+  transform: scaleX(0);
+}
+.midBannerWrapper .cta:hover:before {
+  transform: scaleX(1);
+}
+
+.indexSectionFour {
+  padding: 20px 0 30px;
+  background-color: #fff;
+}
+.indexSectionFour .midLogoBanner {
+  background-color: #0063d1;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.secSubTitle {
+  font-family: "RubikLight";
+  font-size: 14px;
+  line-height: 15px;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+.indexSectionFour .secTitle {
+  font-size: 35px;
+  line-height: 30px;
+  text-align: left;
+  margin-bottom: 20px;
+}
+.indexSectionFour .specificationTabs .nav {
+  margin-bottom: 30px;
+}
+.indexSectionFour .specificationTabs .nav-pills .nav-link {
+  font-size: 13px;
+  color: #acacac !IMPORTANT;
+}
+.indexSectionFour .specificationTabs .nav-pills .nav-link.active {
+  color: #fff !important;
+}
+.indexSectionFour .content{ 
+  font-family: "RubikLight";
+  font-size: 18px;
+  line-height: 25px;
+  margin-bottom: 10px;
+}
+.indexSectionFour .details {
+  font-family: "RubikLight";
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.indexSectionFive .video-container {
+  position: relative;
+  width: 100%;
+}
+.indexSectionFive video {
+  width: 100%;
+  height: 100%;
+}
+.indexSectionFive .video-container .play-gif {
+  position: absolute;
+  top: 40%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #0063d1;
+  color: #fff;
+  cursor: pointer;
+}
+
+.indexSectionSix {
+  padding: 0 0 40px 0;
+}
+.indexSectionSix .secTitle {
+  max-width: 550px;
+  margin: 30px auto 0;
+}
+
+.clientLogoWrap {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 30px;
+}
+.clientLogoWrap img {
+  max-width: 150px;
+  object-fit: contain;
+  object-position: center;
+} 
+
+/*************************************** Inner Pages Banner General Rules  ****************************/
+
+.innerBannerSections {
+  min-height: 430px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.innerBannerContent .lightText {
+  font-family: "RubikRegular";
+  font-size: 55px;
+  line-height: 80px;
+  color: #fff;
+  text-transform: uppercase;
+}
+.innerBannerContent .boldTitle {
+  font-family: "RubikBlack";
+  font-size: 70px;
+  line-height: 80px;
+  color: #fff;
+}
+
+.flexGrid {
+  display: flex;
+  justify-content: space-between;
+}
+
+.innerSecTitle {
+  font-family: "RubikMedium";
+  font-size: 29px;
+  line-height: 45px;
+  color: #000;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.innerSecDesc {
+  font-size: 18px;
+  font-family: "RubikLight";
+  color: #858585;
+}
+.flexGrid img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.flexGrid .title {
+  font-family: "RubikMedium";
+  font-size: 25px;
+  line-height: 35px;
+  color: #000;
+  margin: 25px 0;
+}
+.flexGrid .content {
+  font-family: "RubikLight";
+  font-size: 18px;
+  line-height: 25px;
+  color: #858585;
+}
+
+
+/******************************* About US CSS Starts Here ***************************/
+/************************************************************************************/
+
+.aboutSecBanner {
+  position: relative;
+  background: url(../images/banner-slider.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.offerText {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  background: #000;
+  font-size: 14px;
+  font-family: "RubikMedium";
+  line-height: 36px;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+}
+.aboutSectionTwo {
+  background: #f2f4f5;
+  padding: 60px 0;
+}
+.flexGrid .column {
+  width: 32%;
+}
+.aboutSectionTwo .innerSecDesc {
+  font-size: 18px;
+  font-family: "RubikLight";
+  color: #858585;
+  text-align: center;
+  max-width: 630px;
+  margin: 0 auto 60px;
+}
+.aboutSectionTwo .flexGrid img {
+  min-height: 255px;
+  transform: scale(1);
+  transition: all 0.5s ease-in-out;
+}
+.aboutSectionTwo .flexGrid .column:hover img,
+.aboutSectionTwo .flexGrid .column.active img {
+  transform: scale(1.03);
+}
+.aboutSectionTwo .flexGrid .details {
+  width: 100%;
+  overflow: hidden;
+  transition: max-height 0.5s;
+}
+.aboutSectionTwo .flexGrid .details .content {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+.aboutSectionThree {
+  background: #f2f4f5;
+  padding: 150px 0 25px;
+}
+.teamsWrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.teamsWrapper .member {
+  text-align: center;
+}
+.teamsWrapper .member .profileWrap {
+  width: 175px;
+  height: 175px;
+  border-radius: 50%;
+  margin-bottom: 25px;
+}
+.teamsWrapper .member .profileWrap img {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  object-fit: cover;
+  object-position: center;
+}
+.teamsWrapper .member .name {
+  font-family: "RubikMedium";
+  font-size: 18px;
+  margin-bottom: 5px;
+  color: #000;
+}
+.teamsWrapper .member .designation {
+  font-family: "RubikLight";
+  font-size: 14px;
+  color: #858585;
+}
+.teamsWrapper .member.last .profileWrap{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #fed700;
+  color: #000;
+}
+.teamsWrapper .member.last .profileWrap .small {
+  font-family: "RubikLight";
+  color: #000;
+  font-size: 14px;
+  margin-bottom: 2px;
+}
+.teamsWrapper .member.last .profileWrap .large {
+  font-family: "RubikMedium";
+  color: #000;
+  font-size: 20px;
+}
+#aboutPageWrapper .indexSectionFour {
+  padding: 55px 0;
+}
+
+/********************************* About US CSS Ends Here ***************************/
+/************************************************************************************/
+
+
+/********************************* Serving Industries CSS Starts Here ***************************/
+/************************************************************************************************/
+
+.servingIndustrySecBanner {
+  position: relative;
+  background: url(../images/industries-banner.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.industriesSectionTwo {
+  padding: 50px 0;
+}
+.industriesSectionTwo .secContent {
+  margin-bottom: 100px;
+}
+.industriesGrid .row {
+  margin-bottom: 60px !important;
+}
+.industriesGrid .contentBox .industryName {
+  font-family: "RubikRegular";
+  font-size: 42px;
+  margin-bottom: 25px;
+}
+.industriesGrid .contentBox .industryDesc {
+  font-family: "RubikRegular";
+  font-size: 18px;
+  color: #858585;
+}
+.industriesGrid .contentBox a {
+  position: relative;
+  display: inline-block;
+  color: #000;
+  font-size: 15px;
+  font-weight: 600;
+  margin-top: 50px;
+  text-transform: capitalize;
+}
+.industriesGrid .contentBox a::before {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  width: 100%;
+  height: 2px;
+  transition: all 0.25s;
+  background: #0063d1;
+  transform: scaleX(0);
+}
+.industriesGrid .contentBox a:hover:before {
+  transform: scaleX(1);
+}
+.industriesGrid .industryImgWrap img{
+  width: 100%;
+  min-height: 420px;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.industriesSectionThree{
+  padding: 100px 0;
+  background: #f2f4f5;
+}
+.industriesSectionThree .prodCard {
+  width: 100%;
+  max-width: 22%;
+}
+
+/********************************* Serving Industries CSS Ends Here ***************************/
+/************************************************************************************************/
+
+
+/************************************** Articles CSS Starts Here ********************************/
+/************************************************************************************************/
+
+
+.articleSectionTwo {
+  padding: 50px 0 100px 0;
+}
+.articleSectionTwo .secContent {
+  margin-bottom: 80px;
+}
+.articleSectionTwo .articlesWrapper .flexGrid {
+  justify-content: space-evenly;
+}
+.singleArticle {
+  width: 100%;
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
+}
+.articlesWrapper .articleDetails {
+  margin-top: 50px;
+  font-size: 16px;
+  color: #000;
+}
+.articlesWrapper .articleDetails .articleDesc {
+  margin-bottom: 15px;
+}
+.singleArticle:hover .articleDetail{
+  margin-top: 0;
+}
+.singleArticle img {
+  width: 100%;
+  min-height: 320px;
+  max-height: 320px;
+  height: 100%;
+  transform: scale(1.2);
+  transition: all 0.5s ease-in-out;
+}
+.singleArticle:hover img{
+  transform: scale(1);
+}
+.singleArticle .articleDetail {
+  background-color: #fff;
+  padding: 20px;
+  margin-top: -90px;
+  position: relative;
+  z-index: 1;
+  transition: all 0.5s ease-in-out;
+}
+.singleArticle .articleDetail .date {
+  font-family: "RubikRegular";
+  font-size: 13px;
+  color: #000;
+}
+.singleArticle .articleDetail .title {
+  font-family: "RubikBold";
+  font-size: 22px;
+  color: #000;
+  margin: 20px 0 30px 0;
+  text-align: left;
+  display: block;
+}
+.singleArticle .articleDetail .author {
+  display: flex;
+  align-items: center;
+}
+.singleArticle .articleDetail .author .dot{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #232f44;
+  margin-right: 15px;
+  display: inline-block;
+}
+.singleArticle .articleDetail .author .authorName{
+  font-family: "RubikLight";
+  font-size: 13px;
+  color: #000;
+}
+.articleDetails .listing {
+  padding: 31px 0 0 0;
+}
+.articleDetails .heading {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+.articleDetails .subHeading {
+  font-size: 20px;
+  margin: 0 0 20px 0;
+}
+.articleDetails ol {
+  margin-bottom: 30px;
+}
+.articleDetails ol li {
+  list-style: auto;
+  font-size: 16px;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+.articleDetails .conclusionHead {
+  font-size: 28px;
+  margin: 20px 0 20px 0;
+}
+/************************************** Articles CSS Ends Here ********************************/
+/************************************************************************************************/
+
+
+
+/************************************** Contact Us CSS Starts Here ********************************/
+/************************************************************************************************/
+
+.contactBanner {
+  position: relative;
+  background: url(../images/conatct-banner.png) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+#contactPageWrapper .aboutSecTwo {
+  padding: 75px 0 0 0;
+}
+#contactPageWrapper .aboutSecTwo .secContent {
+  max-width: 750px;
+  margin: 0 auto 50px;
+  text-align: center;
+}
+#contactPageWrapper .socialLinksBar {
+  display: flex;
+  justify-content: center;
+}
+#contactPageWrapper .socialLinksBar a {
+  margin-right: 50px;
+}
+#contactPageWrapper .socialLinksBar a:last-child {
+  margin: 0;
+}
+.bar {
+  background: #a9aeb1;
+  margin: 80px 0;
+  height: 2px;
+}
+.contactDetails .flexGrid {
+  justify-content: space-evenly;
+}
+.contactDetails .contactBox {
+  width: 25%;
+  text-align: center;
+}
+.contactDetails .contactBox  span {
+  display: block;
+  color: #0063d1;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+.contactDetails .contactBox a {
+  font-family: "RubikMedium";
+  font-size: 16px;
+  line-height: 25px;
+  color: #000000;
+}
+.contacSecThree {
+  padding: 80px 0;
+}
+.contacSecThree .mapBox {
+  width: 100%;
+  overflow: hidden;
+}
+.formWRapper .formTitle {
+  font-family: "RubikMedium";
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+.formWRapper input, 
+.formWRapper textarea {
+  font-family: "RUbikRegular";
+  width: 100%;
+  border: none;
+  box-shadow: none;
+  border-bottom: 1px solid #ccc;
+  font-size: 14px;
+  color: #000;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  min-height: 40px;
+}
+.formWRapper textarea  {
+  resize: none;
+  min-height: 85px;
+}
+.formWRapper input::placeholder,
+.formWRapper textarea::placeholder {
+  color: #858585;
+}
+
+.formWRapper button {
+
+}
+
+/************************************** Contact US CSS Ends Here ********************************/
+/************************************************************************************************/
+
+
+/************************************** T&C Css Starts Here ********************************/
+/************************************************************************************************/
+
+.termsSectionTwo {
+  padding: 70px 0;
+}
+.termsSectionTwo .termsConditionContentWrap {
+  max-width: 1020px;
+  margin: 0 auto;
+  text-align: center;
+}
+.termsSectionTwo .termsConditionContentWrap .point {
+  margin-bottom: 60px;
+}
+.termsSectionTwo .termsConditionContentWrap .clause {
+  font-family: "RubikMedium";
+  font-size: 35px;
+  line-height: 30px;
+  color: #000;
+  margin-bottom: 20px;
+}
+.termsSectionTwo .termsConditionContentWrap .subDesc {
+  font-family: "RubikRegular";
+  font-size: 16px;
+  line-height: 25px;
+  color: #858585;
+  margin-bottom: 20px;
+}
+.termsSectionTwo .termsConditionContentWrap ul {
+  font-family: "RubikRegular";
+  font-size: 16px;
+  line-height: 25px;
+  color: #858585;
+}
+
+.termsSectionTwo .termsConditionContentWrap a {
+  font-family: "RubikBold";
+  color: #000;
+}
+
+/************************************** T&C Css Ends Here ********************************/
+/************************************************************************************************/
+
+
+
+/************************************** Store Css Starts Here ***********************************/
+/************************************************************************************************/
+.storeSecBanner {
+  position: relative;
+  background: url(../images/store-banner.png) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.storeSectionTwo {
+  background: #f2f4f5;
+  padding: 100px 0;
+}
+.storeSectionTwo .storeWrapper .catgHeading {
+  font-family: "RubikMedium";
+  font-size: 15px;
+  line-height: 35px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 20px 0;
+  background-color: #0063d1;
+  color: #fff;
+}
+.storeSectionTwo .storeWrapper ul.nav {
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 0 35px 1px #cccccc55;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.storeSectionTwo .storeWrapper ul.nav .nav-link.active, 
+.storeSectionTwo .storeWrapper ul.nav .show>.nav-link,
+.storeSectionTwo .storeWrapper ul.nav .nav-link {
+  background: none;
+  color: #000;
+  font-family: "RubikMedium";
+  font-size: 15px;
+  line-height: 35px;
+  color: #000;
+  padding: 0;
+  width: 100%;
+  text-align: left;
+}
+.storeSectionTwo .storeWrapper ul.nav .nav-link i{
+  font-size: 12px;
+  margin: 0 5px;
+}
+.storeSectionTwo .storeWrapper ul.nav .nav-link.active {
+  background-color: #0063d1;
+  color: #fff;
+}
+.storeSectionTwo .storeWrapper .productsWrapper .productHead hr {
+  border: 1px solid #ccc;
+  margin: 30px 0;
+} 
+.productsWrapper .productHead .label {
+  font-family: "RubikMedium";
+  font-size: 20px;
+  line-height: 25px;
+  color: #000;
+  margin-bottom: 25px
+}
+.productsWrapper .productCarousel {
+  position: relative;
+}
+.productsWrapper .productCarousel .prodCard {
+  max-width: 260px;
+  width: 100%;
+  margin-bottom: 20px;
+  transition: all 0.3s ease-in-out
+}
+.productsWrapper .productCarousel .prodCard:hover{
+  box-shadow: 0 0 35px 1px #cccccc55;
+}
+
+.productsWrapper .productCarousel .owl-nav{
+  position: absolute;
+  top: -60px;
+  right: 0px;
+  margin: 0;
+  display: flex;
+}
+.productsWrapper .productCarousel .owl-nav button {
+  width: 25px;
+  height: 25px;
+  background: #fff;
+  border-radius: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  color: #000;
+}
+.productsWrapper .productCarousel .owl-nav button:hover {
+  background: #0063d1;
+  color: #fff;
+}
+
+
+/************************************** Store Css Ends Here ***********************************/
+/**********************************************************************************************/
+
+
+/************************************** Product Detail Starts Here ***********************************/
+/*****************************************************************************************************/
+
+#productDetailWrapper {
+  background: #f2f4f5;
+}
+.productDetailTopSec {
+  padding: 100px 0 0;
+}
+.productDetailTopSec .row {
+  justify-content: space-between;
+}
+.prodSliderWrap #sync1 {
+  margin-bottom: 20px;
+}
+.prodSliderWrap .productMainImg {
+  width: 100%;
+  min-height: 430px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.prodSliderWrap .productMainImg img {
+  max-width: 280px;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.prodSliderWrap #sync2 {
+  display: flex;
+  justify-content: space-between;
+}
+.prodSliderWrap .prodThumbImg {
+  max-width: 150px;
+  min-height: 120px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  cursor: pointer;
+}
+.prodSliderWrap .prodThumbImg img {
+  max-width: 90px;
+  width: 100%;
+  max-height: 90px;
+  min-height: 90px;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+.prodDescWrap .catgName {
+  font-family: "RubikMedium";
+  font-size: 12px;
+  line-height: 25px;
+  color: #acacac;
+  text-transform: uppercase;
+  width: 175px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.prodDescWrap .prodName {
+  text-align: left;
+  line-height: 35px;
+  margin: 25px 0;
+}
+.prodDescWrap .reviewsRatings span {
+  margin-right: 20px;
+}
+.prodDescWrap .reviewsRatings .rating i{
+  font-size: 12px;
+  color: #ffb136;
+}
+.prodDescWrap .reviewsRatings .reviewCount {
+  font-size: 14px;
+}
+.prodDescWrap .detailDesc {
+  font-size: 18px;
+  line-height: 28px;
+  margin: 25px 0;
+  color: #7d7d7d;
+}
+.prodDescWrap .pricing {
+  font-size: 35px;
+  line-height: 35px;
+  color: #000;
+  font-family:'RubikBold';
+}
+.prodDescWrap .prodActions {
+  display: flex;
+  margin: 25px 0 0 0;
+  justify-content: flex-start;
+}
+.prodActions .prodQty {
+  display: flex;
+  align-items: center;
+  max-width: 135px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  padding: 5px;
+  margin-right: 20px;
+}
+.prodDescWrap .prodActions .prodQty input{
+  border: none;
+  background: transparent;
+}
+.prodDescWrap .prodActions .prodQty .refresh_cart {
+  background: transparent;
+  color: #7d7d7d;
+  font-size: 16px;
+  font-weight: 800;
+  cursor: pointer;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.prodDescWrap .prodActions .btnGlobal {
+  border-radius: 20px;
+  padding: 7px 45px;
+  margin-right: 20px;
+}
+.prodDescWrap .prodActions .wishListIcons {
+  font-size: 18px;
+  margin-right: 15px;
+  cursor: pointer;
+}
+.prodDescWrap .prodActions .compareIcon {
+  font-size: 18px;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.productDetailReviews {
+  padding: 100px 0 0 0;
+}
+.productDetailReviews .nav-pills {
+  margin-bottom: 30px;
+}
+.productDetailReviews .nav-link {
+  color: #7d7d7d;
+  text-transform: uppercase;
+  font-size: 14px;
+  border-radius: 0px;
+  margin-right: 15px;
+}
+.productDetailReviews .nav-link.active {
+  background-color: #0063d1;
+  color: #fff;
+  box-shadow: 0 0 22px 1px #00000065;
+}
+.productDetailReviews .secTitle {
+  text-align: left;
+  max-width: 450px;
+  margin-bottom: 20px;
+}
+.productDetailReviews .detailDesc{
+  font-size: 18px;
+  line-height: 28px;
+  margin: 25px 0;
+  color: #7d7d7d;
+}
+.productDetailReviews .pruductFeatures {
+  margin: 25px 0 15px 0;
+  font-weight: 800;
+  font-size: 20px;
+}
+.productDetailReviews ul li{
+  font-size: 15px;
+  line-height: 25px;
+  margin-bottom: 5px;
+  color: #7d7d7d;
+}
+
+/************************************** Product Detail Ends Here ***********************************/
+/****************************************************************************************************/
+
+
+/************************************** CheckOut Screen Starts Here *********************************/
+/****************************************************************************************************/
+#checkOutWrapper {
+  background: #f2f4f5;
+  padding: 0 0 100px 0;
+}
+.billingFormWrap {
+  max-width: 90%;
+}
+.billingHeading {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 45px;
+  margin-bottom: 15px;
+}
+.billingFormWrap .inputLabelWrapper {
+  margin-bottom: 20px;
+}
+.billingFormWrap .inputLabelWrapper label{
+  font-size: 14px;
+  font-weight: 600;
+  color: #000;
+  line-height: 45px;
+  width: 100%;
+  text-align: left;
+  text-transform: uppercase;
+}
+.billingFormWrap .inputLabelWrapper input{
+  width: 100%;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 7px 15px;
+  font-size: 14px;
+  line-height: 35px;
+  font-weight: 400;
+  color: #000;
+  box-shadow: 0 0 0 0 #000;
+}
+.billingFormWrap .inputLabelWrapper input::placeholder {
+  font-weight: 600;
+  color: #000000;
+}
+.billingFormWrap .sideBySide {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.billingFormWrap .sideBySide .inputLabelWrapper {
+  width: 48%;
+}
+.billingFormWrap .inputLabelWrapper select{
+  width: 100%;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 15px;
+  font-size: 14px;
+  line-height: 35px;
+  font-weight: 400;
+  color: #000;
+  box-shadow: 0 0 0 0 #000;
+  border: none;
+}
+.billingFormWrap .inputLabelWrapper textarea {
+  width: 100%;
+  border-radius: 10px;
+  border: none;
+  resize: none;
+  min-height: 200px;
+  padding: 15px;
+}
+.checkOutItemsWrapper {
+  background: #fff;
+  border-radius: 10px;
+  padding: 30px 25px;
+}
+.checkOutItemsWrapper .billingHeading{
+  border-bottom: 1px solid #ccc;
+}
+.checkOutItemsWrapper .productListWrapper h5 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #363636;
+  margin: 20px 0;
+}
+.checkOutItemsWrapper .checkoutAllProds {
+  height: 280px;
+  overflow-y: scroll;
+  width: 100%;
+}
+.checkOutItemsWrapper .checkoutAllProds::-webkit-scrollbar-track{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #0063d1;
+}
+.checkOutItemsWrapper .checkoutAllProds::-webkit-scrollbar{
+	width: 5px;
+	background-color: #0063d1;
+}
+.checkOutItemsWrapper .checkoutAllProds::-webkit-scrollbar-thumb{
+	background-color: #ffffff;
+	border: 1px solid #0063d1;
+}
+.checkOutItemsWrapper .checkoutAllProds .checkoutSingleProduct {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+.checkoutSingleProduct .singleProdDetails {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+.checkoutSingleProduct .singleProdDetails .productImg {
+  max-width: 120px;
+  width: 100%;
+  min-height: 110px;
+  max-height: 110px;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 25px 1px #ccc;
+  flex-shrink: 0;
+}
+.checkoutSingleProduct .singleProdDetails .productImg img {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+  object-position: center;
+}
+.checkoutSingleProduct .singleProdDetails .prodDesc {
+  font-size: 14px;
+  font-weight: 500;
+  color: #0063d1;
+  max-width: 180px;
+  flex-shrink: 0;
+}
+.checkoutSingleProduct .productPrice {
+  font-size: 16px;
+  line-height: 30px;
+  color: #7d7d7d;
+}
+.checkOutItemsWrapper .checkOutPricing {
+  margin-top: 50px;
+}
+.checkOutPricing .prodsCost, 
+.checkOutPricing .shippingCost, 
+.checkOutPricing .totalAmount {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  border-top: 1px solid #ccc;
+}
+.checkOutPricing .prodsCost .label, 
+.checkOutPricing .shippingCost .label, 
+.checkOutPricing .totalAmount .label {
+  font-size: 18px;
+  line-height: 45px;
+  color: #363636;
+  font-weight: 600;
+} 
+.checkOutPricing .prodsCost .value, 
+.checkOutPricing .shippingCost .value, 
+.checkOutPricing .totalAmount .value {
+  font-size: 18px;
+  line-height: 30px;
+  color: #555555;
+  font-weight: 600;
+} 
+.checkOutPricing .totalAmount .value  {
+  font-size: 24px;
+  line-height: 30px;
+  color: #0063d1;
+  font-weight: 600;
+}
+.checkOutItemsWrapper .paymentMethods {
+  margin-top: 50px;
+}
+.checkOutItemsWrapper .paymentMethods .form-check {
+  margin-bottom: 15px;
+}
+.checkOutItemsWrapper .paymentMethods .form-check-label .type {
+  display: block;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.checkOutItemsWrapper .paymentMethods .form-check-label .type {
+  display: flex;
+  gap: 10px;
+}
+.checkOutItemsWrapper .paymentMethods .form-check-label .type img {
+  max-width: 15px;
+  object-fit: contain;
+  object-position: center;
+}
+.checkOutItemsWrapper .paymentMethods .form-check-label .typeDetails {
+  font-size: 14px;
+  color: #363636;
+}
+.checkOutItemsWrapper .btnGlobal {
+  width: 100%;
+  border-radius: 20px;
+  font-size: 16px;
+  margin-top: 60px;
+}
+/************************************** CheckOut Screen Ends Here ***********************************/
+/****************************************************************************************************/
+
+
+/***************** Footer Css Starts Here ************************/
+.footerContentWrap {
+  padding: 80px 0 50px 0;
+}
+.footerContentWrap .footerLogo {
+  display: block;
+  margin-bottom: 30px;
+}
+.footerLogo img {
+  max-width: 130px;
+}
+.footerContentWrap .footerLogo::before {
+  display: none;
+}
+.footerContentWrap .column .address{
+  color: #a1a1a1;
+  margin-bottom: 10px;
+  max-width: 250px;
+}
+.footerContentWrap .column .contactList li {
+  margin-bottom: 5px;
+}
+.footerContentWrap .column a {
+  font-size: 15px;
+  color: #a1a1a1;
+  position: relative;
+  transition: transform .5s ease;
+}
+.footerContentWrap .column a::before{
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  width: 100%;
+  height: 1px;
+  transition: all 0.25s;
+  background: #fff;
+  transform: scaleX(0);
+}
+.footerContentWrap .column a:hover:before{
+  transform: scaleX(1);
+}
+.footerContentWrap .column a:hover {
+  color: #ffffff;
+}
+.footerContentWrap .rightColsWrap {
+  display: flex;
+  justify-content: space-between;
+}
+.colTitle {
+  color: #fff;
+  font-size: 24px;
+  line-height: 30px;
+  margin-bottom: 30px;
+}
+.colSubTitle {
+  color: #fff;
+  font-size: 15px;
+  line-height: 20px;
+  margin-bottom: 25px;
+}
+.footerContentWrap .rightColsWrap ul li {
+  margin-bottom: 15px;
+}
+.footerContentWrap .rightColsWrap .timeSlots li{
+  font-size: 14px;
+  color: #a1a1a1;
+}
+.footerWrapper .socialLinksBar {
+  padding-bottom: 50px;
+}
+.footerWrapper .socialLinksBar i{
+  font-size: 16px;
+  color: #959595;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.footerWrapper .socialLinksBar a:hover i {
+  color: #0063d1
+}
+.copyRightBar  {
+  padding: 30px 0;
+  background-color: #fff;
+}
+.copyRightBar .paymentWays {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.copyRightBar .paymentWays span img {
+  width: 40px;
+  height: 25px;
+  object-fit: contain;
+  object-position: center;
+  cursor: pointer;
+  margin-right: 15px;
+}
+.copyRightBar .copyRight {
+  font-family: "RuikMedium";
+  font-size: 14px;
+  line-height: 20px;
+  color: #000;
+  text-align: center;
+}
+
+/* Footer Css ENds Here */
